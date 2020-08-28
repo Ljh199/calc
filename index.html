@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		
+	</head>
+	<body>
+		<div id="container">
+			<div class="showDiv">
+				<input type="text" class="showScreen" disabled="disabled" value="0" id="showScreen"/>
+			</div>
+			<div class="operatorDiv">
+				<table class="operatorTable">
+					<tr>
+						<td class="tr_m">
+							<button type="button" >mc</button>
+						</td>
+						<td class="tr_m">
+							<button type="button">m+</button>
+						</td>
+						<td class="tr_m">
+							<button type="button">m-</button>
+						</td>
+						<td class="tr_m">
+							<button type="button">mr</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button type="button" class="font_color" onclick="clickAC()">AC</button>
+						</td>
+						<td>
+							<button type="button" class="font_color" onclick="clickBack()">←</button>
+						</td>
+						<td>
+							<button type="button">±</button>
+						</td>
+						<td>
+							<button type="button" onclick="clickFuhao('/')">÷</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button type="button" onclick="chickNum('7')">7</button>
+						</td>
+						<td>
+							<button type="button" onclick="chickNum('8')">8</button>
+						</td>
+						<td>
+							<button type="button" onclick="chickNum('9')">9</button>
+						</td>
+						<td>
+							<button type="button" onclick="clickFuhao('*')">×</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button type="button" onclick="chickNum('4')">4</button>
+						</td>
+						<td>
+							<button type="button" onclick="chickNum('5')">5</button>
+						</td>
+						<td>
+							<button type="button" onclick="chickNum('6')">6</button>
+						</td>
+						<td>
+							<button type="button" onclick="clickFuhao('-')">－</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button type="button" onclick="chickNum('1')">1</button>
+						</td>
+						<td>
+							<button type="button" onclick="chickNum('2')">2</button>
+						</td>
+						<td>
+							<button type="button" onclick="chickNum('3')">3</button>
+						</td>
+						<td>
+							<button type="button" onclick="clickFuhao('+')">＋</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button type="button" onclick="chickNum('0')">0</button>
+						</td>
+						<td>
+							<button type="button" onclick="clickDian()">·</button>
+						</td>
+						<td>
+							<button type="button" class="bg_color" onclick="clickDeng()">＝</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/calc.js" charset="UTF-8"></script>
+</html>
